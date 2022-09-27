@@ -1,10 +1,16 @@
 *{
     margin: 0;
     padding: 0;
+    /* box-sizing: border-box; */
+}
+html{
+    /* font-size: 10px; */
 }
 
 body{
-    overflow: hidden;
+    font-family: sans-serif;
+    background: url(/img/bac2.jpeg);
+    background-size:cover;
 }
 
 :root{
@@ -24,9 +30,49 @@ body{
     ---color-bg1:#2e3267;
     --color-bg2:#424890;
 }
-.About_Evento {
-    background: var(--color-primary);
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 3rem;
+    margin-top: 4rem;
+    text-align: center;
 }
-.container about_evento {
-    background: var(---color-bg1);
+h1{
+    color:var(--color-bg2);
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+
+}
+image{
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+
+p{
+    width: 50%;
+    font-size: 1rem;
+    color:var(--color-white);
+    margin: 70px auto;
+    padding: 0% 6px;
+    line-height: 2rem;
+    font-size: 15px;
+}
+.btn{
+    margin-top: -50px ;
+    padding: 5px 6px;
+    background-color: #f6f6f6;
+    padding-top: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--color-bg2);
+    text-align: center;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #dadada;
+    text-decoration-line: underline;
+
 }

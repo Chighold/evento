@@ -3,40 +3,30 @@
 <head>
     <title> Evento | Welcome </title>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/b8ef5b471e.js" crossorigin="anonymous"></script>
+    <script type="module" src="/scripts/Processes.js"></script>
 </head>
 <body>
     <div id="backdrop">
         <img src="img/pix6.jpg" alt="">
     </div>
     <div id="background">
-        <h2> Evento </h2>
-        <p> Never miss out on events </p>
-        <div id="events">
-            <div class="event">
-                <div class="img"></div>
-                <div class="info"></div>
-            </div>
-            <div class="event">
-                <div class="img"></div>
-                <div class="info"></div>
-            </div>
-            <div class="event">
-                <div class="img"></div>
-                <div class="info"></div>
-            </div>
-            <div class="event">
-                <div class="img"></div>
-                <div class="info"></div>
-            </div>
-            <div class="event">
-                <div class="img"></div>
-                <div class="info"></div>
-            </div>
-            <div class="event">
-                <div class="img"></div>
-                <div class="info"></div>
+        <div id="header">
+            <div>
+                <h2> Evento </h2>
+                <p> Never miss out on events </p>
+                <ul id="navs">
+                    <li id ="nav">Home</li>
+                    <li id ="nav">About</li>
+                    <li id ="nav">Contact</li>
+                <button id="sign"> SignUp</button>
+                </ul>
             </div>
         </div>
+        <div id="events">
+            <!-- Content populated by welcome.js -->
+        </div>
+        <button onclick="loadMore()"> Load more </button>
     </div>
 </body>
 <script src="scripts/welcome.js"></script>

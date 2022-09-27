@@ -1,0 +1,83 @@
+ *{
+    margin: 0;
+    padding: 0;
+ }
+
+ .header{
+   width: 50%;
+   margin:50px  auto;
+   
+ }
+ .title{   
+   margin: 10px auto ;
+   text-align: center;
+   
+ }
+ h1 span{
+   color:red;
+   font-family: sans-serif;
+   font-size: bold;
+ }
+ .context {
+   margin: auto;
+   text-align: center;
+   font-family: sans-serif;
+   
+ }
+ .form{
+   width: 10%;
+   padding: 10% 15%;
+   margin:  auto;
+   background-color: white;
+   box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   
+ }
+ .name{
+  color: #111;
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+ }
+ .inputbox{
+  width: 150%;
+  margin: 10px auto;
+  padding: 5px;
+  outline: none;
+  border: 1px solid #555;
+  font-size: 16px;
+ }
+ .text{
+  width: 150%;
+  margin: 10px auto;
+  padding: 5px;
+  outline: none;
+  border: 1px  solid #555;
+  font-size: 16px;
+  resize: none;
+
+ }
+ .input{
+  width: 50%;
+  font-size: 20px;
+  color: #fff;
+  background-color: red;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  font-weight: 500;
+  padding: 5px;
+ }
+ .input:hover{
+  background-color: #ff0157;
+  transition: 0.5s;
+  cursor: pointer;
+ }
+ .right_reserved{
+  padding: 8px 40px;
+  text-align: center;
+  border-top:1px solid rgba(0,0,0,0.1)) ;
+ }

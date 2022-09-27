@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\educational site"
+		},
+		{
+			"path": "..\\..\\Projects\\collaborative reading"
+		},
+		{
+			"path": "..\\..\\Projects\\conversation app"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "evento"
+	}
+}

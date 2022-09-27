@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    overflow: hidden;
+}
+.first_side{
+    width: 5%;
+    height: 100vh;
+    background-color: #10131b;
+}
+
+.second_side{
+    width: 40%;
+    height: 100vh;
+    background-color: transparent;
+}
+.third_side{
+    width: 55%;
+    height: 100vh;
+    background-color:transparent;
+}
+.third_side h1{
+    width: 100%;
+    margin: 50px auto;
+    font-size: 70px;
+
+}
+.happen{
+    color: red;    
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 0;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+    padding: 10h; 
+    color:black;
+}
+.form h1{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin:5px 0;
+    padding-right:45% ;
+}
+.form p{
+    font-size: 20px;
+    margin: 25px 0;
+}
+.form input{
+    padding: 20px 30px;
+    width: 200%;
+    border: none;
+    border-radius: 5px;
+    outline: 0.6px solid;
+    background-color: rgba(0, 0, 0, 0);
+}
+.form button{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 10px 15px;
+    width: 50%;
+    border: 0;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+}
+.form button:hover{
+    color: #eca39d
+}
+  
+
+.icon{
+    display: flex;
+    gap: 15%;
+    color:white ;
+}
+.card_icon{
+    background-color:  #1b1f29;
+    padding: 35px;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+.card_icon:hover{
+    background-color: rgb(75, 74, 74);
+    box-shadow: 0.3px 3px rgba(0, 0, 0, 0);
+    transition: all ease-out  0.5s;
+    cursor: pointer;
+}
+.icons{
+    background-color: red;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom:25px;
+    display: inline-block;
+    font-size: 20px;
+;
+}
+.card_icon:nth-child(2) .icons{
+    background-color: rgb(76, 231, 76);
+    
+}
+.card_icon:nth-child(3) .icons{
+    background-color: wheat;
+    
+}
+.content{
+    width: 70%;
+    margin: 10px;
+    padding: 70px 60px;
+    border:0;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(75, 74, 74);
+    line-height: 30px; 
+} 
