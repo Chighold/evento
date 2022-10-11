@@ -1,5 +1,5 @@
 const image = document.getElementsByTagName('img')[0];
-const srcs = [,'pix3.jpeg','pix2.jpeg','pix6.jpg','pix7.jpeg'];
+const srcs = ['pix3.jpeg','pix2.jpeg','pix6.jpg','pix7.jpeg'];
 let index = 0;
 
 let interval = setInterval(() => {

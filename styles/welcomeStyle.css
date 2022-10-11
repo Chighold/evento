@@ -54,10 +54,10 @@
 }
  #navs {
     width: 40%;
-    margin-top: -35px ;
+    margin-top: -45px ;
     padding: 0%  90%;
     display: flex;
-    gap: 2.6rem;
+    gap: 3rem;
     list-style:none;
     color: white;
 
@@ -67,14 +67,15 @@
 }
 #sign {
     margin: -10px;
-    border: o;
-    background:var(--color-danger);
+    border: 0;
+    background:var(--color-bg2);
     padding: 10px;
     border-radius: 5px;
     color: white;
+    
 }
 #sign:hover{
-    background:var(--color-success) ;
+    background-color:var(--color-danger) ;
 }
 #background h2 {
     font-size: xx-large;

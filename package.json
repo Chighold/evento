@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Chighold/evento/issues"
   },
-  "homepage": "https://github.com/Chighold/evento#readme"
+  "homepage": "https://github.com/Chighold/evento#readme",
+  "dependencies": {
+    "firebase": "^9.11.0"
+  }
 }
