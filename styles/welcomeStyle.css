@@ -68,14 +68,14 @@
 #sign {
     margin: -10px;
     border: 0;
-    background:var(--color-bg2);
+    background:var(--color-danger);
     padding: 10px;
     border-radius: 5px;
     color: white;
     
 }
 #sign:hover{
-    background-color:var(--color-danger) ;
+    background-color:var(---color-bg1) ;
 }
 #background h2 {
     font-size: xx-large;

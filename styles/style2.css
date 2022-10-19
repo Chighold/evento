@@ -44,11 +44,11 @@ body{
     width: 100%;
     margin: 5px auto;
     font-size: 70px;
-    color: #1b1f29;
+    color: #111;
 
 }
 .happen{
-    color: #1b1f29;    
+    color: var(--color-success);    
 
 }
 .form{
@@ -90,7 +90,7 @@ body{
     border: 0;
     border-radius: 5px;
     background-color: var(--color-bg);
-    color: white;
+    color: var(--color-white);
 }
 .form button:hover{
     background-color:var(--color-danger)
@@ -117,7 +117,7 @@ body{
     cursor: pointer;
 }
 .icons{
-    background-color: red;
+    background-color:var(--color-danger);
     padding: 20px;
     border-radius: 10px;
     margin-bottom:25px;
@@ -126,11 +126,10 @@ body{
 ;
 }
 .card_icon:nth-child(2) .icons{
-    background-color: rgb(76, 231, 76);
-    
+    background-color:var(--color-bg2);
 }
 .card_icon:nth-child(3) .icons{
-    background-color: wheat;
+    background-color: var(--color-success);
     
 }
 .content{
@@ -140,6 +139,6 @@ body{
     border:0;
     border-radius: 10px;
     color: white;
-    background-color: rgb(75, 74, 74);
+    background-color: var(--color-bg);
     line-height: 30px; 
 }
