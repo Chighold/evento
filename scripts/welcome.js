@@ -9,7 +9,7 @@ let interval = setInterval(() => {
         index++;
     };
     image.src = `img/${srcs[index]}`;
-}, 4000);
+}, 8000);
 
 
 const eventParent = document.getElementById('events');
@@ -19,8 +19,12 @@ let i = 0;
 while (i < 10) {
     eventParent.innerHTML = eventParent.innerHTML + "<div class=\"event\"> \
     <div class=\"img\"></div> \
-    <div class=\"info\"></div> \
-    </div>";
+    <div class=\"info\"> \
+        <h2> Student Union Party </h2> \
+        <h3> Student union building, OAU campus, Ile-ife, Osun State, Nigeria. </h3> \
+    </div> \
+    <div class=\"like\"></div> \
+    </div>"
     i ++;
 };
 
@@ -31,7 +35,9 @@ function loadMore() {
     while (i < j) {
         eventParent.innerHTML = eventParent.innerHTML + `<div class=\"event\"> \
         <div class=\"img\"></div> \
-        <div class=\"info\"> ${i} </div> \
+        <div class=\"info\"> \
+            <h2> Student Union Party </h2> \
+        </div> \
         </div>`
         i ++
     };

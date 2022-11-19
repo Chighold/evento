@@ -32,23 +32,18 @@ body{
     --color-bg2:#424890;
 }
 .container{
-    margin-left:50% ;
+    margin-left: 50% ;
     margin-top: 11%;
 
 }
 .container .right-content h2{
-    margin-right:60px ;
-    font-size: 30px;
-    font-weight: bold;
     color: var(--color-bg);
-    height: 40px;
 }
 .container .right-content p{
-    width: 70%;
-    margin-left:35px;
-    line-height: 20px;
+    width: 85%;
     color: var(--color-bg);
-    font-weight: 300;
+    padding: 20px;
+    padding-left: 0px;
 } 
 
 
