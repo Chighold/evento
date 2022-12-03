@@ -1,0 +1,33 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: #eca39d;
+}
+#header {
+    width: 100%;
+    background-color: #2e3267;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: small;
+    padding: 0px 5%;
+    box-sizing: border-box;
+}
+#links {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    color: lightgray;
+}
+#links a:hover{
+    color: white;
+    cursor: pointer;
+}
