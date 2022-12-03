@@ -28,6 +28,10 @@ body{
     justify-content: space-between;
     color: lightgray;
 }
+#links a {
+    color: lightgray;
+    text-decoration: none;
+}
 #links a:hover{
     color: white;
     cursor: pointer;
