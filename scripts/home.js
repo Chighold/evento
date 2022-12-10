@@ -29,7 +29,6 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 const fetch = async () => {
     await firebase.database().ref('events').on('value', snapshot => {
-        console.log("Hello")
         displayData(snapshot.val())
     })
 }
@@ -37,7 +36,6 @@ fetch();
 
 const displayData = (data) => {
     const keys = Object.keys(data)
-    console.log(keys)
     const eventParent = document.getElementById('body');
     let i = 0;
 
