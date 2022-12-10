@@ -11,16 +11,22 @@ firebase.initializeApp(firebaseConfig);
 
 const login = async (e) => {
   e.preventDefault()
-  const email = document.getElementById("email").value;
+  document.getElementById("submit").innerText = "Loading..."
+  const orgName = document.getElementById("orgName").value;
   const password = document.getElementById("password").value;
-  firebase.database().ref(`users/ayomidetommiwa`).on('value', snapshot => {
+  firebase.database().ref(`users/${orgName}`).on('value', snapshot => {
     if (snapshot.val() == null) {
-      console.log("Not found")
+      document.getElementById("err").innerText = "Account does not exist"
+      document.getElementById("submit").innerText = "Login"
     } else {
-      console.log("Found")
+      if (snapshot.val().password == password) {
+        localStorage.setItem("orgName", orgName);
+        document.location.href="host.html"
+      } else {
+        document.getElementById("err").innerText = "Password is incorrect"
+      }
     }
   })
-  console.log(email);
-  return false
 }
-document.getElementsByTagName("form")[0].addEventListener("submit", login)
+document.getElementById("login").addEventListener("submit", login);
+

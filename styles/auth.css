@@ -76,6 +76,11 @@ button {
     box-sizing: border-box;
     width: 100%;
 }
+#err {
+    font-size: smaller;
+    color: rgb(250, 0, 0);
+    margin-top: 10px;
+}
 form p {
     font-size: smaller;
     color: gray;
