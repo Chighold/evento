@@ -42,7 +42,7 @@ const displayData = (data) => {
     while (i < keys.length) {
         eventParent.innerHTML = eventParent.innerHTML + 
         `
-            <div class="event">
+                <div class="event">
                 <div class="pic">
                     <img src="https://www.swindonalexandrahouse.co.uk/wp-content/uploads/2021/08/suprise-party-ideas.jpg" />
                 </div>

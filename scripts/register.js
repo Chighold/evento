@@ -29,7 +29,8 @@ const register = async (e) => {
       await firebase.database().ref(`users/${orgName}`).set({
         orgName: orgName,
         email: email,
-        password: password
+        password: password,
+        keys: 0
       });
       localStorage.setItem("orgName", orgName);
       document.location.href="host.html"
