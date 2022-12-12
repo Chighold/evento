@@ -11,15 +11,23 @@ firebase.initializeApp(firebaseConfig);
 // localStorage.removeItem("orgName")
 
 const savedData = localStorage.getItem('orgName');
-var length;
+let length;
 
 const createEvent = async (e) => {
   e.preventDefault()
-  const name = document.getElementById("name").value;
-  const description = document.getElementById("description").value;
-  const location = document.getElementById("location").value;
-  const date = document.getElementById("date").value;
+  let name = document.getElementById("name").value;
+  let description = document.getElementById("description").value;
+  let location = document.getElementById("location").value;
+  let date = document.getElementById("date").value;
   await firebase.database().ref(`events/${savedData}${length + 1}`).set({
+    name: name,
+    description: description,
+    location: location,
+    date: date,
+    orgName: savedData,
+    status: "live"
+  });
+  await firebase.database().ref(`users/${savedData}/events/${savedData}${length + 1}`).set({
     name: name,
     description: description,
     location: location,
@@ -30,32 +38,36 @@ const createEvent = async (e) => {
   await firebase.database().ref(`users/${savedData}`).update({
     keys: length + 1
   })
+  window.location.reload(true);
 }
 document.getElementById("form").addEventListener("submit", createEvent)
 
-const displayEvents = async (data) => {
-  length = data.keys;
+const displayEvents = (data) => {
+  if (data === null) {
+    return false;
+  }
+  const keys = Object.keys(data)
   const eventParent = document.getElementById('events');
-  let i = 1;
+  let i = 0;
 
-  while (i < length) {
-    await firebase.database().ref(`events/${savedData}${i}`).on('value', snapshot => {
-      const thisData = snapshot.val()
-      eventParent.innerHTML =
-      `
-        <div>
-          <div><img src=${thisData[keys[i]]} /></div>
-          <div>
-            <h2>${thisData[keys[i]]}</h2>
-          </div>
-        </div>
-      `
-    })
-  } 
+  while (i < keys.length) {
+    eventParent.innerHTML = eventParent.innerHTML + 
+    `
+      <div class="event">
+        <h2> ${data[keys[i]].name} </h2>
+        <h3> ${data[keys[i]].location} </h3>
+        <p> ${data[keys[i]].description} </p>
+      </div>
+    `
+    i++;
+  }; 
 }
 const getData = async () => {
   document.getElementsByTagName("h3")[0].innerText = savedData;
   await firebase.database().ref(`users/${savedData}`).on("value", snapshot => {
+    length = snapshot.val().keys
+  })
+  await firebase.database().ref(`users/${savedData}/events`).on("value", snapshot => {
     displayEvents(snapshot.val())
   })
 }
@@ -63,5 +75,7 @@ const getData = async () => {
 if (savedData === null) {
   document.location.href = "login.html"
 } else {
-  getData()
+  if (savedData) {
+    getData()
+  }
 }

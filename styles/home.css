@@ -74,6 +74,7 @@ body{
 .event h2 {
     color: #2e3267;
     line-height: 0px;
+    text-transform: capitalize;
 }
 .event h3 {
     line-height: 0px;
@@ -83,10 +84,12 @@ body{
     padding: 5px 0px 15px 0px;
     margin-bottom: 20px;
     border-bottom: 1px solid gray;
+    text-transform: capitalize;
 }
 .event p {
     color: gray;
     font-size: 12px;
+    text-transform: capitalize;
 }
 .event u {
     color: #2e3267;

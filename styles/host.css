@@ -100,3 +100,24 @@ button {
   box-sizing: border-box;
   width: 100%;
 }
+.event {
+  width: 90%;
+  padding: 10px;
+  background-color: rgb(160, 160, 160);
+  box-sizing: border-box;
+  margin: 10px 0px;
+}
+.event h2 {
+  font-size: small;
+  color: #2e3267;
+  line-height: 0px;
+}
+.event h3 {
+  color: white;
+  font-size: smaller;
+}
+.event p {
+  color: lightgray;
+  font-size: smaller;
+  line-height: 0px;
+}

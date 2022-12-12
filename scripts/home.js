@@ -35,6 +35,9 @@ const fetch = async () => {
 fetch();
 
 const displayData = (data) => {
+    if (data === null) {
+        return false;
+    }
     const keys = Object.keys(data)
     const eventParent = document.getElementById('body');
     let i = 0;
@@ -47,7 +50,7 @@ const displayData = (data) => {
                     <img src="https://www.swindonalexandrahouse.co.uk/wp-content/uploads/2021/08/suprise-party-ideas.jpg" />
                 </div>
                 <h2> ${data[keys[i]].name} </h2>
-                <h3> ${data[keys[i]].firm} </h3>
+                <h3> ${data[keys[i]].orgName} </h3>
                 <p> ${data[keys[i]].description} </p>
                 <div>
                     <p> ${data[keys[i]].location} </p>
